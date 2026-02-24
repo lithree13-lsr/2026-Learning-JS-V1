@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "nav">Navigation</p>
+    <ul class="nav">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    </ul>
+    <script>
+        const list = document.querySelectorAll('.nav li')
+        // 遍历数组
+        for (let i = 0; i < list.length; i++){
+            console.log(list[i])//每一个有小li对象
+        }
+        const p = document.querySelectorAll('#nav')
+        p[0].style.color = 'red'
+    </script>
+</body>
+</html>
